@@ -41,3 +41,6 @@ BPHYS workshop, Fall 2022, Eric Rouviere
 4. Enter `git clone git@github.com:ericrouviere/BPHYS_workshop_2022.git`
 
 To keep your up repo up to date with changes I make, cd into `BPHYS_workshop_2022/` and enter `git pull`.
+
+
+### **6. Restart computer**
