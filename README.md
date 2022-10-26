@@ -25,7 +25,7 @@ BPHYS workshop, Fall 2022, Eric Rouviere
 6. Enter `using PyPlot, IJulia, LaTeXStrings, BenchmarkTools`.
 7. Enter `jupyterlab()` to start Jupyter IDE. When prompted to install conda, agree. 
 
-## **4. Installing git**
+### **4. Installing git**
 1. Got to https://git-scm.com/
 2. click "Download for XXX" and follow installer instructions.
 3. In the terminal, move to a directory where you want to put the repo (e.g. `cd ~/Desktop`).
