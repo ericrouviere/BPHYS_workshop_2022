@@ -17,12 +17,13 @@ BPHYS workshop, Fall 2022, Eric Rouviere
 1. Download from https://code.visualstudio.com/download
 2. Install by clicking on the downloaded file and dragging to applications.
 
-### **3. Install Julia extention for VS code.**
+### **3. Install Julia and Jupyter extention for VS code.**
 
 1. Start VS Code.
 2. Inside VS Code, go to the Extensions view by clicking View on the top menu bar and then selecting Extensions.
 3. In the Extensions view, search for the term "julia" in the Marketplace search box, then select the Julia extension (julialang.language-julia) and select the Install button.
-4. Restart VS Code.
+4. Install the "Jupyter" extension in the same way.
+5. Restart VS Code.
 
 ### **4. Installing the nessicary Julia packages**
 1. Open VS code. 
