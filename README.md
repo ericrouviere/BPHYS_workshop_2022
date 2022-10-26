@@ -13,26 +13,31 @@ BPHYS workshop, Fall 2022, Eric Rouviere
 2. Download from https://julialang.org/downloads/
 3. Install by clicking on the downloaded file and dragging to applications.
 
-### **2. Install VS code**
+### **4. Installing the nessicary Julia packages**
+1. Start the julia app. This should open up the terminal with julia running. 
+3. Type `]`. This gets you to the package manager
+4. Enter `add PyPlot, LaTeXStrings, BenchmarkTools`
+5. press the delete key to go back to julia
+6. Enter `using PyPlot, LaTeXStrings, BenchmarkTools` 
+
+### **2. Install text and notebook editor**
+**Option 1: VS Code**
 1. Download from https://code.visualstudio.com/download
 2. Install by clicking on the downloaded file and dragging to applications.
+3. Start VS Code.
+4. Inside VS Code, go to the Extensions view by clicking View on the top menu bar and then selecting Extensions.
+5. In the Extensions view, search for the term "julia" in the Marketplace search box, then select the Julia extension (julialang.language-julia) and select the Install button.
+6. Install the "Jupyter" extension in the same way.
+7. Quit VS Code
 
-### **3. Install Julia and Jupyter extention for VS code.**
+**Option 2: Any editor and IJulia**
+1. Install your favorite editor (I leave this up to you. VS code works.)
+2. In a julia terminal enter `] add IJulia`
+3. Press the delete key to get back to julia
+4. Enter `using IJulia`
+5. When prompted to install conda, agree. 
+6. Enter `notebook()` to start Jupyter. 
 
-1. Start VS Code.
-2. Inside VS Code, go to the Extensions view by clicking View on the top menu bar and then selecting Extensions.
-3. In the Extensions view, search for the term "julia" in the Marketplace search box, then select the Julia extension (julialang.language-julia) and select the Install button.
-4. Install the "Jupyter" extension in the same way.
-5. Restart VS Code.
-
-### **4. Installing the nessicary Julia packages**
-1. Open VS code. 
-2. Type ``<Ctrl+Shift+P>`` or in the toolbar click View -> Command Palette.
-3. Type `Julia: Start REPL` and hit enter.
-4. Type `]`. This gets you to the package manager
-5. Enter `add PyPlot, LaTeXStrings, BenchmarkTools`
-6. press the delete key to go back to julia
-7. Enter `using PyPlot, LaTeXStrings, BenchmarkTools` 
 
 ### **5. Installing git**
 1. Got to https://git-scm.com/
