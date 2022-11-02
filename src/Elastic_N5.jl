@@ -16,7 +16,7 @@ end
 
 ##############################################
 
-function computeHessian!(H,r, S)
+function computeHessian!(H, r, S)
     # compute the hessian matrix of the network
     N = size(S,1)
     H .= 0

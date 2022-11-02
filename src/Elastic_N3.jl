@@ -20,22 +20,23 @@ function drawLattice(W,L)
     return xy
 end
 
+
 function buildAdjacency(xy)
     numNodes = size(xy, 1)
     A = zeros(numNodes, numNodes) # initialize a matrix
-    for i in 1:numNodes
-        for j in 1:numNodes
-            # compute the distance between nodes i and j
-            dx = xy[i,1] - xy[j,1]
-            dy = xy[i,2] - xy[j,2]
-            dist = sqrt(dx^2 + dy^2)
-            if dist < 1.1 # lattice spacing is 1.
-                A[i,j] = 1.0
-            end
+    for i in 1:numNodes,j in 1:numNodes
+        # compute the distance between nodes i and j
+        if i==j; continue; end
+        dx = xy[i,1] - xy[j,1]
+        dy = xy[i,2] - xy[j,2]
+        dist = sqrt(dx^2 + dy^2)
+        if dist < 1.1 # lattice spacing is 1.
+            A[i,j] = 1.0
         end
     end
     return A
 end
+
 
 xy2r(xy) = xy'[:]
 r2xy(r) = Array(reshape(r, 2, :)')
