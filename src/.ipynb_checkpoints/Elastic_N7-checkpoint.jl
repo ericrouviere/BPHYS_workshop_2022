@@ -3,7 +3,8 @@ module Elastic_N7
 push!(LOAD_PATH,"./")
 using LinearAlgebra, Statistics, PyPlot, Elastic_N3, Elastic_N4, Elastic_N5, Elastic_N6
 
-export makeRandStrain, computeEnergy, cooperativity, prepareAllosterySitesStrains, computeFitness
+export makeRandStrain, computeEnergy, cooperativity, prepareAllosterySitesStrains, 
+    computeFitness
 
 
 function makeRandStrain(site, r)
